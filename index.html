@@ -2,91 +2,84 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8" />
-	<meta name="description" content="Simple demo Web page for CSE 134B" />
+    <meta charset="utf-8" />
+	<meta name="description" content="Home" />
 	<meta name="keywords" content="HTML, CSS, JavaScript" />
-	<meta name="author" content="" />
+	<meta name="author" content="Hantian Lin" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>CSE 134B Homework 1 Website</title>
-	<link href="images/favicon.ico" rel="icon" />
-	<link href="styles/main.css" rel="stylesheet" />
-	<script>
-		window.addEventListener('load', function () {
-			let time = window.performance.timing,
-				complete = time.domComplete - time.domLoading;
-			document.getElementById('page-load-info').innerHTML = `<strong>Page Loaded in ${parseInt(complete)}ms
-			 on ${new Date().toLocaleString("en-US")}</strong>`;
-		});
-	</script>
+    <title>Home</title>
+    <link rel="reference" href="https://nationalzoo.si.edu/animals/exhibits">
+    <style>
+        h1 {border: 5px outset rgb(0, 215, 201);}
+    </style>
 </head>
-
+    
 <body>
-	<header>
-		<h1>CSE 134B Homework 2 Website</h1>
-		
-		<section id="user-info-component">
-			<div id="user-info" style="display: none;">
-				<output id="name-info">&nbsp;</output>
-				<br />
-				<output id="major-info">&nbsp;</output>
-				<hr />
-				<br />
-				<!-- Inline Javascript Handlers used here for demonstration only -->
-				<section class="intro-text">
-					<label>My name is <input id="name-input" type="text" autocomplete="name" autofocus maxlength="30" placeholder="Your Name"></label>
-					<br />
-					<label>My major is <input id="major-input" type="text" maxlength="30" placeholder="Your Major"></label>
-				</section>
-	
-				<button onclick="window.update();">Update</button>
-			</div>
-			<script>
-				document.getElementById('user-info').style.display = 'block';
-			</script>
-			<noscript class="error">Error: JavaScript is disabled or blocked.</noscript>
-		</section>
+    <script></script>
+    <header>
+        <h1>Cyber Animal Cafe</h1>
+        <h2>Selected your desired animal company</h2>
+        <picture>
+            <source srcset="cafe.jpeg" type="image">
+            <img src="cafe.jpeg" alt="cafe" width="350" height="200">
+          </picture>
+    </header>
 
+    <main>
+        <section>
+            <div class="Canines">
+                <h3>Canines</h3>
+                <p>We have <span class="canines">golden retriver, German shepherd, and corgi</span> <em>avaliable!</em></p>
+                <img src="golden-retriver.jpeg" alt="golden-retriver" width="150" height="210">
+                <img src="german-shepherd.jpeg" alt="german-shepherd" width="250" height="140">
+                <img src="corgi.jpeg" alt="corgi" width="250" height="150">
+            </div>
 
-		<section id="page-load-component">
-			<div id="load-info" style="display: none;">
-				<output id="page-load-info">Measuring...</output>
-			</div>
-			<script>
-				document.getElementById('load-info').style.display = 'block';
-			</script>
-			<noscript class="error">Error: JavaScript required for page timing measurement </noscript>
-		</section>
-	</header>
+            <hr>
 
-	<main>
-		<h2>UCSD Images</h2>
-		<section class="img">
-			<img src="images/bear.png" alt="Warren Bear" height="430" width="700" />
-			<img src="images/triton.jpg" alt="Triton" height="430" width="700" />
-			<a href="https://ucsd.edu" target="_blank"><img src="images/ucsd.gif" alt="UCSD" height="177"
-				width="700"></a>
-			<br />
-			<section id="links">
-				<h2>Useful Links</h2>
-				<ul>
-					<li><a href="http://tritonlink.ucsd.edu">TritonLink</a></li>
-					<li><a href="http://canvas.ucsd.edu">Canvas</a></li>
-					<li><a href="http://w3.org">W3</a></li>
-				</ul>
-			</section>
+            <div class="Felines">
+                <h3>Felines</h3>
+                <p>We have <span class="felines">orange cat, siamese cat, and tiger cub</span> <em>avaliable!</em></p>            
+            </div>
 
+            <hr>
 
-	</main>
+            <div class="Otters">
+                <h3>Otters</h3>
+                <p>we have <span class="otters">otter and sea otter</span> <em>avaliable!</em></p>            
+            </div>
 
-	<footer>
-		<hr/>
-		<p>💯This page was made with &hearts; by YOUR NAME HERE 💯</p>
-	</footer>
-	<script type="module">
-		import { update } from './scripts/main.js';
-		window.update = update;
-	</script>
-	<script nomodule src="scripts/main-es5.js"></script>
+            <hr>
+
+            <div class="Operation Info">
+                <p>
+                    <b>Cyber Animal Cafe</b> believes that nature has the power to cure everything. <br>
+                    Wash away your stess with these elfs from nature. Grab one and finally say <code>"Hello world!"</code>
+                </p>
+                <pre>
+                    Hours: Open 24/7 for those who seek for it.
+                </pre>
+            </div>
+
+            <hr>
+        </section>
+
+        <aside>
+            <h3>We all live on the same planet</h3>
+            <p><b>Cyber Animal Cafe</b> is dedicated to donate <i>10%</i> of all profit for <strong>wild life protection</strong>.</p>
+            <nav>
+                <a href="https://defenders.org/">Defenders of Wildlife</a> |
+                <a href="https://www.rewild.org/">Re:Wild</a> |
+                <a href="https://www.worldwildlife.org/">World Wildlife Fund</a> |
+                <a href="https://www.wcs.org/">Wildlife Conservation Society</a> |
+            </nav>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>Created by Hantian Lin</p>
+        <iframe scr="https://www.google.com/maps/place/University+of+California+San+Diego/@32.8793111,-117.2382114,15z/data=!4m5!3m4!1s0x80dc06c4414caf4f:0xefb6aafc89913ea7!8m2!3d32.8800604!4d-117.2340135" title="UCSD">
+        </iframe>        
+    </footer>
 </body>
-
-</html>
