@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-	<meta name="description" content="Home" />
+	<meta name="description" content="Cyber Animal Cafe Homepage" />
 	<meta name="keywords" content="HTML, CSS, JavaScript" />
 	<meta name="author" content="Hantian Lin" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,14 +19,20 @@
     <header>
         <h1>Cyber Animal Cafe</h1>
         <h2>Selected your desired animal company</h2>
+
         <picture>
             <source srcset="cafe.jpeg" type="image">
             <img src="cafe.jpeg" alt="cafe" width="350" height="200">
-          </picture>
+        </picture>
+
+        <audio controls>
+            <source src="doorbell.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
     </header>
 
     <main>
-        <section>
+        <section class="Choices">
             <div class="Canines">
                 <h3>Canines</h3>
                 <p>We have <span class="canines">golden retriver, German shepherd, and corgi</span> <em>avaliable!</em></p>
@@ -51,35 +57,82 @@
 
             <hr>
 
-            <div class="Operation Info">
-                <p>
-                    <b>Cyber Animal Cafe</b> believes that nature has the power to cure everything. <br>
-                    Wash away your stess with these elfs from nature. Grab one and finally say <code>"Hello world!"</code>
-                </p>
-                <pre>
-                    Hours: Open 24/7 for those who seek for it.
-                </pre>
-            </div>
+            <div class="Coming soon">
+                <h3>Coming soon </h3>
+                <p>The following order is determined by popularity vote. Top three choices are displayed but only top one will become avaliable next month!</p>
+                <ol>
+                    <li>Samoyed</li>
+                    <li>Guinea pig</li>
+                    <li>Ragdoll</li>
+                </ol>
 
-            <hr>
+                <form action="">
+                    <label for="animals">Choose your top animal:</label>
+                    <select name="animals" id="animals">
+                        <optgroup label="Canines">
+                            <option value="Samoyed">Samoyed</option>
+                            <option value="Husky">Husky</option>
+                            <option value="Wolfdog">Wolfdog</option>
+                        </optgroup>
+                        <optgroup label="Felines">
+                            <option value="Ragdoll">Ragdoll</option>
+                            <option value="Maine Coon">Maine Coon</option>
+                            <option value="Lion cub">Lion cub</option>
+                        </optgroup>
+                        <optgroup label="Others">
+                            <option value="Raven">Raven</option>
+                            <option value="Guinea Pig">Guinea Pig</option>
+                            <option value="Parakeet Bird">Parakeet Bird</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </section>
+
+        <hr>
+
+        <div class="Operation Info">
+            <p>
+                <b>Cyber Animal Cafe</b> believes that nature has the power to cure everything. <br>
+                Wash away your stess with these elfs from nature. Grab one and finally say <code>"Hello world!"</code>
+            </p>
+            <pre>
+                Hours: Open 24/7 for those who seek for it.
+            </pre>
+        </div>
 
         <aside>
             <h3>We all live on the same planet</h3>
+            <video width="320" height="240" controls>
+                <source src="tiger.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
             <p><b>Cyber Animal Cafe</b> is dedicated to donate <i>10%</i> of all profit for <strong>wild life protection</strong>.</p>
             <nav>
-                <a href="https://defenders.org/">Defenders of Wildlife</a> |
-                <a href="https://www.rewild.org/">Re:Wild</a> |
-                <a href="https://www.worldwildlife.org/">World Wildlife Fund</a> |
-                <a href="https://www.wcs.org/">Wildlife Conservation Society</a> |
+                <ul>
+                    <li><a href="https://defenders.org/">Defenders of Wildlife</a></li>
+                    <li><a href="https://www.rewild.org/">Re:Wild</a></li>
+                    <li><a href="https://www.worldwildlife.org/">World Wildlife Fund</a></li>
+                    <li><a href="https://www.wcs.org/">Wildlife Conservation Society</a></li>
+                </ul>
             </nav>
         </aside>
-
     </main>
 
     <footer>
+        <svg width="1000" height="10">
+            <rect width="1000" height="10" style="fill:rgb(255, 255, 255);stroke-width:2;stroke:rgb(0,0,0)" />
+            Sorry, your browser does not support inline SVG.
+        </svg>
         <p>Created by Hantian Lin</p>
-        <iframe scr="https://www.google.com/maps/place/University+of+California+San+Diego/@32.8793111,-117.2382114,15z/data=!4m5!3m4!1s0x80dc06c4414caf4f:0xefb6aafc89913ea7!8m2!3d32.8800604!4d-117.2340135" title="UCSD">
-        </iframe>        
+        <iframe scr="https://www.google.com/maps/place/University+of+California+San+Diego/@32.8793111,-117.2382114,15z/data=!4m5!3m4!1s0x80dc06c4414caf4f:0xefb6aafc89913ea7!8m2!3d32.8800604!4d-117.2340135"
+                title="UCSD map" width="300" height="200">
+        </iframe>
+        <canvas id="Rectangle" width="1000" height="10" style="border:1px solid black"></canvas>
     </footer>
 </body>
+
+</html>
