@@ -34,24 +34,24 @@
     <main>
         <section class="Choices">
             <div class="Canines">
-                <h3>Canines</h3>
+                <button type="button" onclick="alert('Woof Woof!')"><h3>Canines</h3></button>
                 <p>We have <span class="canines">golden retriver, German shepherd, and corgi</span> <em>avaliable!</em></p>
-                <img src="golden-retriver.jpeg" alt="golden-retriver" width="150" height="210">
-                <img src="german-shepherd.jpeg" alt="german-shepherd" width="250" height="140">
-                <img src="corgi.jpeg" alt="corgi" width="250" height="150">
+                <a href="golden-retriver.html"><img src="golden-retriver.jpeg" alt="golden-retriver" width="150" height="210"></a>
+                <a href="german-shepherd.html"><img src="german-shepherd.jpeg" alt="german-shepherd" width="250" height="140"></a>
+                <a href="corgi.html"></a><img src="corgi.jpeg" alt="corgi" width="250" height="150"></div>
             </div>
 
             <hr>
 
             <div class="Felines">
-                <h3>Felines</h3>
+                <button type="button" onclick="alert('Meow----!')"><h3>Felines</h3></button>
                 <p>We have <span class="felines">orange cat, siamese cat, and tiger cub</span> <em>avaliable!</em></p>            
             </div>
 
             <hr>
 
             <div class="Otters">
-                <h3>Otters</h3>
+                <button type="button" onclick="alert('Chirp Chirp Chirp!')"><h3>Otters</h3></button>
                 <p>we have <span class="otters">otter and sea otter</span> <em>avaliable!</em></p>            
             </div>
 
@@ -69,7 +69,7 @@
                 <form action="thank-you.html">
                     <fieldset>
                         <legend>VOTE</legend>
-                        <label for="animals">Choose your top animal:</label>
+                        <label for="animals">Choose your desired animal:</label>
                         <select name="animals" id="animals">
                             <optgroup label="Canines">
                                 <option value="Samoyed">Samoyed</option>
@@ -113,15 +113,17 @@
                 Your browser does not support the video tag.
             </video>
 
-            <p><b>Cyber Animal Cafe</b> is dedicated to donate <i>10%</i> of all profit for <strong>wild life protection</strong>.</p>
-            <nav>
-                <ul>
-                    <li><a href="https://defenders.org/">Defenders of Wildlife</a></li>
-                    <li><a href="https://www.rewild.org/">Re:Wild</a></li>
-                    <li><a href="https://www.worldwildlife.org/">World Wildlife Fund</a></li>
-                    <li><a href="https://www.wcs.org/">Wildlife Conservation Society</a></li>
-                </ul>
-            </nav>
+            <details>
+                <summary><b>Cyber Animal Cafe</b> is dedicated to donate <i>10%</i> of all profit for <strong>wild life protection</strong>.</summary>
+                <nav>
+                    <ul>
+                        <li><a href="https://defenders.org/">Defenders of Wildlife</a></li>
+                        <li><a href="https://www.rewild.org/">Re:Wild</a></li>
+                        <li><a href="https://www.worldwildlife.org/">World Wildlife Fund</a></li>
+                        <li><a href="https://www.wcs.org/">Wildlife Conservation Society</a></li>
+                    </ul>
+                </nav>
+            </details>
         </aside>
     </main>
 
