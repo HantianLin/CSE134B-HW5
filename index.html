@@ -19,7 +19,7 @@
         <h2>Selected your desired animal company by clicking on it</h2>
 
         <picture>
-            <source srcset="cafe.jpeg" type="image">
+            <source media="(min-width:465px)" srcset="cafe.jpeg">
             <img src="cafe.jpeg" alt="cafe" width="350" height="200">
         </picture>
 
@@ -32,7 +32,7 @@
     <main>
         <section class="Choices">
             <div class="Canines">
-                <button type="button" onclick="alert('Woof Woof!')"><h3>Canines</h3></button>
+                <button type="button" onclick="alert('Woof Woof!')">Canines</button>
                 <p>We have <span class="canines">golden retriver, German shepherd, and corgi</span> <em>avaliable!</em></p>
                 <a href="golden-retriver.html"><img src="golden-retriver.jpeg" alt="golden-retriver" width="150" height="210"></a>
                 <a href="german-shepherd.html"><img src="german-shepherd.jpeg" alt="german-shepherd" width="250" height="140"></a>
@@ -42,14 +42,14 @@
             <hr>
 
             <div class="Felines">
-                <button type="button" onclick="alert('Meow----!')"><h3>Felines</h3></button>
+                <button type="button" onclick="alert('Meow----!')">Felines</button>
                 <p>We have <span class="felines">orange cat, siamese cat, and tiger cub</span> <em>avaliable!</em></p>            
             </div>
 
             <hr>
 
             <div class="Otters">
-                <button type="button" onclick="alert('Chirp!!!')"><h3>Otters</h3></button>
+                <button type="button" onclick="alert('Chirp!!!')">Otters</button>
                 <p>we have <span class="otters">otter and sea otter</span> <em>avaliable!</em></p>            
             </div>
 
@@ -95,52 +95,50 @@
         <hr>
 
         <section class="Operation Info">
+            <h3>Operation Info</h3>
             <pre>
-                <h3>Operation Info</h3>
-                <p>
-                    <b>Cyber Animal Cafe</b> believes that nature has the power to cure everything. <br>
-                    Wash away your stess with these elfs from nature. Grab one and finally say <code>"Hello world!"</code>
-                </p>
+                <b>Cyber Animal Cafe</b> believes that nature has the power to cure everything. <br>
+                Wash away your stess with these elfs from nature. Grab one and finally say <code>"Hello world!"</code>
             </pre>
-                <table>
-                    <colgroup>
-                        <col>
-                    </colgroup>
-                    <caption>Hours</caption>
-                    <tr>
-                        <th>Days</th>
-                        <th>Hours</th>
-                    </tr>
-                    <tr>
-                        <td>Monday</td>
-                        <td>24 hours</td>
-                    </tr>
-                    <tr>
-                        <td>Tuesday</td>
-                        <td>24 hours</td>
-                    </tr>
-                    <tr>
-                        <td>Wednesday</td>
-                        <td>24 hours</td>
-                    </tr>
-                    <tr>
-                        <td>Thursday</td>
-                        <td>24 hours</td>
-                    </tr>
-                    <tr>
-                        <td>Friday</td>
-                        <td>24 hours</td>
-                    </tr>
-                    <tr>
-                        <td>Saturday</td>
-                        <td>24 hours</td>
-                    </tr>
-                    <tr>
-                        <td>Sunday</td>
-                        <td>24 hours</td>
-                    </tr>
-                </table>
-            </pre>
+            <table>
+                <caption>Hours</caption>
+                <colgroup>
+                    <col>
+                    <col>
+                </colgroup>
+                <tr>
+                    <th>Days</th>
+                    <th>Hours</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>24 hours</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>24 hours</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>24 hours</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>24 hours</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>24 hours</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>24 hours</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>24 hours</td>
+                </tr>
+            </table>
         </section>
 
         <aside>
@@ -170,7 +168,7 @@
         <form action="contact-us.html">
             <input type="submit" value="Contact Us">
         </form>
-        <iframe scr="https://www.google.com/maps/place/University+of+California+San+Diego/@32.8793111,-117.2382114,15z/data=!4m5!3m4!1s0x80dc06c4414caf4f:0xefb6aafc89913ea7!8m2!3d32.8800604!4d-117.2340135"
+        <iframe src="https://www.google.com/maps/place/University+of+California+San+Diego/@32.8793111,-117.2382114,15z/data=!4m5!3m4!1s0x80dc06c4414caf4f:0xefb6aafc89913ea7!8m2!3d32.8800604!4d-117.2340135"
                 title="UCSD map" width="300" height="200">
         </iframe>
     </footer>
