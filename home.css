@@ -8,8 +8,8 @@
     --font-size: 16px;
     --black: #000000;
     --pink: #fe8a71;
-    --blue: #3da4ab;
-    --yellow: #f6cd61;
+    --blue: #2c8cb8;
+    --yellow: #f99820;
     --gray: #4a4e4d;
     --white: #e7eff6;
 }
@@ -19,13 +19,29 @@
     font-size: var(--font-size);
 }
 
+#cafe_pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#doorbell {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 body h1 {
     font-family: "CustomFont";
     font-size: 5em;
     text-align: center;
-    color: var(--blue);
+    color: antiquewhite;
     border: 5px solid var(--yellow);
     border-radius: 12px;
+    padding: 20px;
+    background-image: url(cafe.jpeg);
 }
 
 body h2 {
@@ -36,16 +52,53 @@ body h2 {
 .Choices {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .choice_btn {
     font-family: "CustomFont";
-    font-size: 20px;
     width: 150px;
     height: 50px;
     color: var(--blue);
-    border: 5px solid var(--yellow);
+    border: 5px solid var(--blue);
     border-radius: 12px;
 }
 
+.Canines {
+    text-align: center;
+    color: var(--gray);
+    border: 5px solid var(--yellow);
+}
+
+.Felines {
+    text-align: center;
+    color: var(--gray);
+    border: 5px solid var(--yellow);
+}
+
+.Otters {
+    text-align: center;
+    color: var(--gray);
+    border: 5px solid var(--yellow);
+}
+
+.Coming_soon {
+    text-align: center;
+    color: var(--gray);
+}
+
+#hours {
+    background-color: var(--yellow);
+}
+
+aside {
+    text-align: center;
+}
+
+#top_three {
+    color: var(--pink)
+}
+
+footer {
+    text-align: center;
+}

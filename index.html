@@ -16,12 +16,22 @@
         <h1>Cyber Animal Cafe</h1>
         <h2>Selected your desired animal company by clicking on it</h2>
 
-        <picture id="cafe_pic">
-            <source media="(min-width:640px)" srcset="cafe.jpeg">
-            <img src="cafe.jpeg" alt="cafe" width="350" height="200">
+        <picture class="cafe_pic">
+            <source
+                srcset="cafe.jpeg"
+                media="(min-width: 769px)"
+            />
+            <source
+                srcset="cafe_tablet.jpg"
+                media="(min-width: 641px) and (max-width: 768px)"
+            />
+            <img
+                src="cafe_mobile.jpg"
+                alt="cafe shop"
+            />
         </picture>
-
-        <audio controls>
+          
+        <audio id="doorbell" controls>
             <source src="doorbell.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
@@ -31,7 +41,7 @@
         <section class="Choices">
             <div class="Canines">
                 <button class="choice_btn" type="button" onclick="alert('Woof Woof!')"><b>Canines</b></button>
-                <p>We have <span class="canines">golden retriver, German shepherd, and corgi</span> <em>avaliable!</em></p>
+                <p>We have <span class="span_text">golden retriver, German shepherd, and corgi</span>avaliable!</p>
                 <a href="golden-retriver.html"><img src="golden-retriver.jpeg" alt="golden-retriver" width="150" height="210"></a>
                 <a href="german-shepherd.html"><img src="german-shepherd.jpeg" alt="german-shepherd" width="250" height="140"></a>
                 <a href="corgi.html"><img src="corgi.jpeg" alt="corgi" width="250" height="150"></a>
@@ -41,14 +51,14 @@
 
             <div class="Felines">
                 <button class="choice_btn" type="button" onclick="alert('Meow----!')"><b>Felines</b></button>
-                <p>We have <span class="felines">orange cat, siamese cat, and tiger cub</span> <em>avaliable!</em></p>            
+                <p>We have <span class="span_text">orange cat, siamese cat, and tiger cub</span>avaliable!</p>            
             </div>
 
             <hr>
 
             <div class="Otters">
                 <button class="choice_btn" type="button" onclick="alert('Chirp!!!')"><b>Otters</b></button>
-                <p>we have <span class="otters">otter and sea otter</span> <em>avaliable!</em></p>            
+                <p>we have <span class="span_text">otter and sea otter</span>avaliable!</p>            
             </div>
         </section>
 
@@ -59,7 +69,7 @@
             <p>
                 The following order is determined by popularity vote. Top three choices are displayed but only top one will become avaliable next month!
             </p>
-            <ol>
+            <ol id="top_three">
                 <li>Samoyed</li>
                 <li>Guinea pig</li>
                 <li>Ragdoll</li>
@@ -95,13 +105,13 @@
 
         <hr>
 
-        <section class="Operation Info">
+        <section class="Operation_Info">
             <h3>Operation Info</h3>
             <p>
                 <b>Cyber Animal Cafe</b> believes that nature has the power to cure everything. <br>
                 Wash away your stess with these elfs from nature. Grab one and finally say <code>"Hello world!"</code>
             </p>
-            <table>
+            <table id="hours">
                 <caption>Hours</caption>
                 <colgroup>
                     <col>
