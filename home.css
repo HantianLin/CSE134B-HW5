@@ -7,7 +7,7 @@
     --font-size: 20px;
     --black: #000000;
     --pink: #fe8a71;
-    --blue: #2c8cb8;
+    --blue: #0d569f;
     --yellow: #f99820;
     --gray: #4a4e4d;
 }
@@ -56,7 +56,7 @@ body h2 {
 }
 
 .btn {
-    width: 100px;
+    width: 120px;
     height: 50px;
     color: var(--blue);
     border: 5px solid var(--blue);
