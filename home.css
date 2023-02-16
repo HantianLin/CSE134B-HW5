@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "CustomFont";
+    src: url(orange_juice.ttf);
+    fallback: sans-serif;
+}
+
+:root {
+    --text-color: #000000;
+    --font-size: 16px;
+}
+
+* {
+    background-color: antiquewhite;
+}

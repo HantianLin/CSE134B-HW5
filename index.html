@@ -8,18 +8,16 @@
 	<meta name="author" content="Hantian Lin" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cyber Animal Cafe</title>
-    <link rel="reference" href="https://nationalzoo.si.edu/animals/exhibits">
-    <style></style>
+    <link rel="stylesheet" href="home.css">
 </head>
-    
+
 <body>
-    <script></script>
     <header>
         <h1>Cyber Animal Cafe</h1>
         <h2>Selected your desired animal company by clicking on it</h2>
 
-        <picture>
-            <source media="(min-width:465px)" srcset="cafe.jpeg">
+        <picture id="cafe_pic">
+            <source media="(min-width:640px)" srcset="cafe.jpeg">
             <img src="cafe.jpeg" alt="cafe" width="350" height="200">
         </picture>
 
@@ -55,9 +53,11 @@
 
             <hr>
 
-            <div class="Coming soon">
+            <div class="Coming_soon">
                 <h3>Coming soon </h3>
-                <p>The following order is determined by popularity vote. Top three choices are displayed but only top one will become avaliable next month!</p>
+                <p>
+                    The following order is determined by popularity vote. Top three choices are displayed but only top one will become avaliable next month!
+                </p>
                 <ol>
                     <li>Samoyed</li>
                     <li>Guinea pig</li>
@@ -96,10 +96,10 @@
 
         <section class="Operation Info">
             <h3>Operation Info</h3>
-            <pre>
+            <p>
                 <b>Cyber Animal Cafe</b> believes that nature has the power to cure everything. <br>
                 Wash away your stess with these elfs from nature. Grab one and finally say <code>"Hello world!"</code>
-            </pre>
+            </p>
             <table>
                 <caption>Hours</caption>
                 <colgroup>
@@ -148,29 +148,23 @@
                 Your browser does not support the video tag.
             </video>
 
-            <details>
-                <summary><b>Cyber Animal Cafe</b> is dedicated to donate <i>10%</i> of all profit for <strong>wild life protection</strong>.</summary>
-                <nav>
-                    <ul>
-                        <li><a href="https://defenders.org/">Defenders of Wildlife</a></li>
-                        <li><a href="https://www.rewild.org/">Re:Wild</a></li>
-                        <li><a href="https://www.worldwildlife.org/">World Wildlife Fund</a></li>
-                        <li><a href="https://www.wcs.org/">Wildlife Conservation Society</a></li>
-                    </ul>
-                </nav>
-            </details>
+            <p>
+                <b>Cyber Animal Cafe</b> is dedicated to donate <i>10%</i> of all profit for <strong>wild life protection</strong>.
+            </p>
+            <nav>
+                <a href="https://defenders.org/">Defenders of Wildlife</a> |
+                <a href="https://www.rewild.org/">Re:Wild</a> |
+                <a href="https://www.worldwildlife.org/">World Wildlife Fund</a> |
+                <a href="https://www.wcs.org/">Wildlife Conservation Society</a>
+            </nav>
         </aside>
     </main>
 
     <footer>
-        <canvas id="Rectangle" width="1000" height="10" style = "border:1px solid black"></canvas>
         <p>Created by Hantian Lin</p>
         <form action="contact-us.html">
             <input type="submit" value="Contact Us">
         </form>
-        <iframe src="https://www.google.com/maps/place/University+of+California+San+Diego/@32.8793111,-117.2382114,15z/data=!4m5!3m4!1s0x80dc06c4414caf4f:0xefb6aafc89913ea7!8m2!3d32.8800604!4d-117.2340135"
-                title="UCSD map" width="300" height="200">
-        </iframe>
     </footer>
 </body>
 
