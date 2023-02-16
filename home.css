@@ -1,6 +1,6 @@
 @font-face {
     font-family: "CustomFont";
-    src: url(orange_juice.ttf), Arial, Helvetica, sans-serif;
+    src: url(orange_juice.ttf), local(Arial), local(Helvetica), local(sans-serif);
 }
 
 :root {
