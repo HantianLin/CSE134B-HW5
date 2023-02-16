@@ -64,6 +64,10 @@ body h2 {
     border-radius: 12px;
 }
 
+.choice_btn a:hover {
+    background-color: var(--yellow);
+}
+
 .Canines {
     text-align: center;
     color: var(--gray);
@@ -83,6 +87,11 @@ body h2 {
 }
 
 .Coming_soon {
+    text-align: center;
+    color: var(--gray);
+}
+
+.Operation_Info {
     text-align: center;
     color: var(--gray);
 }
