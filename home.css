@@ -19,10 +19,9 @@
 }
 
 #cafe_pic {
-    padding: 20px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 60px;
+    margin-right: 60px;
     width: 50%;
 }
 
@@ -88,13 +87,15 @@ body h2 {
 }
 
 .Coming_soon {
-    padding: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
     text-align: center;
     color: var(--gray);
 }
 
 .Operation_Info {
-    padding: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
     text-align: center;
     color: var(--gray);
 }
