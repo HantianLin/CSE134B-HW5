@@ -4,7 +4,7 @@
 }
 
 :root {
-    --font-size: 16px;
+    --font-size: 20px;
     --black: #000000;
     --pink: #fe8a71;
     --blue: #2c8cb8;
@@ -44,14 +44,16 @@ body h1 {
 
 body h2 {
     text-align: center;
-    color: var(--blue)
+    color: var(--blue);
+    font-size: 2em;
 }
 
 .Choices {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 .btn {
@@ -65,6 +67,16 @@ body h2 {
 
 .btn:hover {
     border: 10px solid var(--pink);
+}
+
+.animal_pic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.animal_pic:hover {
+    border: 5px solid var(--pink);
 }
 
 .Canines {
@@ -92,11 +104,19 @@ body h2 {
     color: var(--gray);
 }
 
+.Coming_soon h3 {
+    font-size: 2em;
+}
+
 .Operation_Info {
     margin-left: 60px;
     margin-right: 60px;
     text-align: center;
     color: var(--gray);
+}
+
+.Operation_Info h3 {
+    font-size: 2em;
 }
 
 #hours {
@@ -106,7 +126,12 @@ body h2 {
 }
 
 aside {
+    color: var(--gray);
     text-align: center;
+}
+
+aside h3 {
+    font-size: 2em;
 }
 
 @keyframes voting {
@@ -115,7 +140,7 @@ aside {
     100% {background-color: var(--blue);}
 }
 
-#vote {
+.vote {
     animation-name: voting;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -126,7 +151,7 @@ aside {
 }
 
 #tiger_vid {
-    transform: scale(0.9);
+    transform: scale(1.1);
 }
 
 footer {

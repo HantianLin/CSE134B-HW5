@@ -38,34 +38,34 @@
 
     <main>
         <section class="Choices">
-            <h2>Try clicking on the animal category and on the images</h2>
+            <h2>Tutorial: click on the categories and images</h2>
             <div class="Canines">
                 <button class="btn" type="button" onclick="alert('Woof Woof!')"><b>Canines</b></button>
-                <p>We have <span class="span_text">golden retriver, German shepherd, and corgi</span> avaliable!</p>
-                <a href="golden-retriver.html"><img src="golden-retriver.jpeg" alt="golden-retriver" width="150" height="210"></a>
-                <a href="german-shepherd.html"><img src="german-shepherd.jpeg" alt="german-shepherd" width="250" height="140"></a>
-                <a href="corgi.html"><img src="corgi.jpeg" alt="corgi" width="250" height="150"></a>
+                <p>We have golden retriver, German shepherd, and corgi avaliable!</p>
+                <a class="animal_pic" href="golden-retriver.html"><img src="golden-retriver.jpeg" alt="golden-retriver" width="150" height="210"></a>
+                <a class="animal_pic" href="german-shepherd.html"><img src="german-shepherd.jpeg" alt="german-shepherd" width="250" height="140"></a>
+                <a class="animal_pic" href="corgi.html"><img src="corgi.jpeg" alt="corgi" width="250" height="150"></a>
             </div>
 
             <hr>
 
             <div class="Felines">
                 <button class="btn" type="button" onclick="alert('Meow----!')"><b>Felines</b></button>
-                <p>We have <span class="span_text">orange cat, siamese cat, and tiger cub</span> avaliable!</p>            
+                <p>We have orange cat, siamse cat, and tiger cub avaliable!</p>            
             </div>
 
             <hr>
 
             <div class="Otters">
                 <button class="btn" type="button" onclick="alert('Chirp!!!')"><b>Otters</b></button>
-                <p>we have <span class="span_text">otter and sea otter</span> avaliable!</p>            
+                <p>we have otter and sea otter avaliable!</p>            
             </div>
         </section>
 
         <hr>
 
         <section class="Coming_soon">
-            <h3>Coming soon </h3>
+            <h3>--Coming Soon--</h3>
             <p>
                 The following order is determined by popularity vote. Top three choices are displayed but only top one will become avaliable next month!
             </p>
@@ -75,9 +75,9 @@
                 <li>Ragdoll</li>
             </ol>
 
-            <form id="vote" action="thank-you.html">
+            <form class="vote" action="thank-you.html">
                 <fieldset>
-                    <legend>VOTE</legend>
+                    <legend class="vote">VOTE</legend>
                     <label for="animals">Choose your desired animal:</label>
                     <select name="animals" id="animals">
                         <optgroup label="Canines">
@@ -106,13 +106,12 @@
         <hr>
 
         <section class="Operation_Info">
-            <h3>Operation Info</h3>
+            <h3>--Operation Info--</h3>
             <p>
                 <b>Cyber Animal Cafe</b> believes that nature has the power to cure everything. <br>
                 Wash away your stess with these elfs from nature. Grab one and finally say <code>"Hello world!"</code>
             </p>
             <table id="hours">
-                <caption>Hours</caption>
                 <colgroup>
                     <col>
                     <col>
@@ -154,7 +153,7 @@
 
         <aside>
             <hr>
-            <h3>We all live on the same planet</h3>
+            <h3>--We live on the same planet--</h3>
             <video id="tiger_vid" width="320" height="240" controls>
                 <source src="tiger.mp4" type="video/mp4">
                 Your browser does not support the video tag.
