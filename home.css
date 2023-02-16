@@ -56,7 +56,6 @@ body h2 {
 }
 
 .btn {
-    font-family: "CustomFont";
     width: 100px;
     height: 50px;
     color: var(--blue);
@@ -109,12 +108,24 @@ aside {
     text-align: center;
 }
 
+@keyframes voting {
+    0% {background-color: var(--pink);}
+    50% {background-color: var(--yellow);}
+    100% {background-color: var(--blue);}
+}
+
 #vote {
-    background-color: var(--pink);
+    animation-name: voting;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 #top_three {
     color: var(--pink)
+}
+
+#tiger_vid {
+    transform: scale(0.9);
 }
 
 footer {
