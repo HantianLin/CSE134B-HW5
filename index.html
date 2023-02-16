@@ -30,7 +30,7 @@
     <main>
         <section class="Choices">
             <div class="Canines">
-                <button type="button" onclick="alert('Woof Woof!')"><b>Canines</b></button>
+                <button class="choice_btn" type="button" onclick="alert('Woof Woof!')"><b>Canines</b></button>
                 <p>We have <span class="canines">golden retriver, German shepherd, and corgi</span> <em>avaliable!</em></p>
                 <a href="golden-retriver.html"><img src="golden-retriver.jpeg" alt="golden-retriver" width="150" height="210"></a>
                 <a href="german-shepherd.html"><img src="german-shepherd.jpeg" alt="german-shepherd" width="250" height="140"></a>
@@ -40,57 +40,58 @@
             <hr>
 
             <div class="Felines">
-                <button type="button" onclick="alert('Meow----!')"><b>Felines</b></button>
+                <button class="choice_btn" type="button" onclick="alert('Meow----!')"><b>Felines</b></button>
                 <p>We have <span class="felines">orange cat, siamese cat, and tiger cub</span> <em>avaliable!</em></p>            
             </div>
 
             <hr>
 
             <div class="Otters">
-                <button type="button" onclick="alert('Chirp!!!')"><b>Otters</b></button>
+                <button class="choice_btn" type="button" onclick="alert('Chirp!!!')"><b>Otters</b></button>
                 <p>we have <span class="otters">otter and sea otter</span> <em>avaliable!</em></p>            
             </div>
-
-            <hr>
-
-            <div class="Coming_soon">
-                <h3>Coming soon </h3>
-                <p>
-                    The following order is determined by popularity vote. Top three choices are displayed but only top one will become avaliable next month!
-                </p>
-                <ol>
-                    <li>Samoyed</li>
-                    <li>Guinea pig</li>
-                    <li>Ragdoll</li>
-                </ol>
-
-                <form action="thank-you.html">
-                    <fieldset>
-                        <legend>VOTE</legend>
-                        <label for="animals">Choose your desired animal:</label>
-                        <select name="animals" id="animals">
-                            <optgroup label="Canines">
-                                <option value="Samoyed">Samoyed</option>
-                                <option value="Husky">Husky</option>
-                                <option value="Wolfdog">Wolfdog</option>
-                            </optgroup>
-                            <optgroup label="Felines">
-                                <option value="Ragdoll">Ragdoll</option>
-                                <option value="Maine Coon">Maine Coon</option>
-                                <option value="Lion cub">Lion cub</option>
-                            </optgroup>
-                            <optgroup label="Others">
-                                <option value="Raven">Raven</option>
-                                <option value="Guinea Pig">Guinea Pig</option>
-                                <option value="Parakeet Bird">Parakeet Bird</option>
-                            </optgroup>
-                        </select>
-                        <br>
-                        <input type="submit" value="Submit">
-                    </fieldset>
-                </form>
-            </div>
         </section>
+
+        <hr>
+
+        <section class="Coming_soon">
+            <h3>Coming soon </h3>
+            <p>
+                The following order is determined by popularity vote. Top three choices are displayed but only top one will become avaliable next month!
+            </p>
+            <ol>
+                <li>Samoyed</li>
+                <li>Guinea pig</li>
+                <li>Ragdoll</li>
+            </ol>
+
+            <form action="thank-you.html">
+                <fieldset>
+                    <legend>VOTE</legend>
+                    <label for="animals">Choose your desired animal:</label>
+                    <select name="animals" id="animals">
+                        <optgroup label="Canines">
+                            <option value="Samoyed">Samoyed</option>
+                            <option value="Husky">Husky</option>
+                            <option value="Wolfdog">Wolfdog</option>
+                        </optgroup>
+                        <optgroup label="Felines">
+                            <option value="Ragdoll">Ragdoll</option>
+                            <option value="Maine Coon">Maine Coon</option>
+                            <option value="Lion cub">Lion cub</option>
+                        </optgroup>
+                        <optgroup label="Others">
+                            <option value="Raven">Raven</option>
+                            <option value="Guinea Pig">Guinea Pig</option>
+                            <option value="Parakeet Bird">Parakeet Bird</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </section>
+    
 
         <hr>
 

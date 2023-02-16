@@ -5,10 +5,47 @@
 }
 
 :root {
-    --text-color: #000000;
     --font-size: 16px;
+    --black: #000000;
+    --pink: #fe8a71;
+    --blue: #3da4ab;
+    --yellow: #f6cd61;
+    --gray: #4a4e4d;
+    --white: #e7eff6;
 }
 
 * {
     background-color: antiquewhite;
+    font-size: var(--font-size);
 }
+
+body h1 {
+    font-family: "CustomFont";
+    font-size: 5em;
+    text-align: center;
+    color: var(--blue);
+    border: 5px solid var(--yellow);
+    border-radius: 12px;
+}
+
+body h2 {
+    text-align: center;
+    color: var(--blue)
+}
+
+.Choices {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.choice_btn {
+    font-family: "CustomFont";
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    color: var(--blue);
+    border: 5px solid var(--yellow);
+    border-radius: 12px;
+}
+
