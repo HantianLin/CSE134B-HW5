@@ -1,7 +1,7 @@
 @font-face {
     font-family: "CustomFont";
     src: url(orange_juice.ttf);
-    fallback: sans-serif;
+    fallback: Arial;
 }
 
 :root {
