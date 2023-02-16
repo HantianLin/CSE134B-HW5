@@ -38,9 +38,9 @@
 
     <main>
         <section class="Choices">
-            <h2>Selected your desired animal company by clicking on it</h2>
+            <h2>Try clicking on the animal category and on the images</h2>
             <div class="Canines">
-                <button class="choice_btn" type="button" onclick="alert('Woof Woof!')"><b>Canines</b></button>
+                <button class="btn" type="button" onclick="alert('Woof Woof!')"><b>Canines</b></button>
                 <p>We have <span class="span_text">golden retriver, German shepherd, and corgi</span> avaliable!</p>
                 <a href="golden-retriver.html"><img src="golden-retriver.jpeg" alt="golden-retriver" width="150" height="210"></a>
                 <a href="german-shepherd.html"><img src="german-shepherd.jpeg" alt="german-shepherd" width="250" height="140"></a>
@@ -50,14 +50,14 @@
             <hr>
 
             <div class="Felines">
-                <button class="choice_btn" type="button" onclick="alert('Meow----!')"><b>Felines</b></button>
+                <button class="btn" type="button" onclick="alert('Meow----!')"><b>Felines</b></button>
                 <p>We have <span class="span_text">orange cat, siamese cat, and tiger cub</span> avaliable!</p>            
             </div>
 
             <hr>
 
             <div class="Otters">
-                <button class="choice_btn" type="button" onclick="alert('Chirp!!!')"><b>Otters</b></button>
+                <button class="btn" type="button" onclick="alert('Chirp!!!')"><b>Otters</b></button>
                 <p>we have <span class="span_text">otter and sea otter</span> avaliable!</p>            
             </div>
         </section>
@@ -75,7 +75,7 @@
                 <li>Ragdoll</li>
             </ol>
 
-            <form action="thank-you.html">
+            <form id="vote" action="thank-you.html">
                 <fieldset>
                     <legend>VOTE</legend>
                     <label for="animals">Choose your desired animal:</label>
@@ -97,7 +97,7 @@
                         </optgroup>
                     </select>
                     <br>
-                    <input type="submit" value="Submit">
+                    <input id="submit" type="submit" value="Submit">
                 </fieldset>
             </form>
         </section>
@@ -174,7 +174,7 @@
     <footer>
         <p>Created by Hantian Lin</p>
         <form action="contact-us.html">
-            <input type="submit" value="Contact Us">
+            <input class="btn" type="submit" value="Contact Us">
         </form>
     </footer>
 </body>
