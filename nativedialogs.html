@@ -49,7 +49,6 @@
 
             safePromptBtn.addEventListener('click', () => {
                 const result = window.prompt('What is your name?');
-                result = window.prompt(DOMPurify.sanitize(result));
                 if (result === null) {
                     output.textContent = 'User didn’t enter anything';
                 } else {
