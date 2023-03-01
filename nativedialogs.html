@@ -19,7 +19,7 @@
         <button id="safer_prompt">
             Safer Prompt
         </button>
-        <br>
+        <hr>
         <output></output>
 
         <script>
@@ -35,7 +35,7 @@
 
             confirmBtn.addEventListener('click', () => {
                 const result = window.confirm('Do you confirm this?');
-                output.textContent = `The value returned by the confirm method is: ${result}`;
+                output.textContent = `Confirm result: ${result}`;
             });
 
             promptBtn.addEventListener('click', () => {
@@ -47,7 +47,7 @@
                 }
             });
 
-            safePromptButton.addEventListener('click', () => {
+            safePromptBtn.addEventListener('click', () => {
                 const result = window.prompt('What is your name?');
                 result = window.prompt(DOMPurify.sanitize(result));
                 if (result === null) {
