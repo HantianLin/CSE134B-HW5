@@ -30,30 +30,30 @@
             const output = document.querySelector('output');
 
             alertBtn.addEventListener('click', () => {
-                window.alert('Alert pressed');
+                window.alert("Alert pressed");
             });
 
             confirmBtn.addEventListener('click', () => {
-                const result = window.confirm('Do you confirm this?');
-                output.textContent = `Confirm result: ${result}`;
+                const result = window.confirm("Do you confirm this?");
+                output.textContent = "Confirm result: ${result}";
             });
 
             promptBtn.addEventListener('click', () => {
-                const result = window.prompt('What is your name?');
+                const result = window.prompt("What is your name?");
                 if (result === null) {
-                    output.textContent = 'User didn’t enter anything';
+                    output.textContent = "Prompt result: User didn’t enter anything";
                 } else {
-                    output.textContent = `Prompt result: ${result}`;
+                    output.textContent = "Prompt result: ${result}";
                 }
             });
 
             saferPromptBtn.addEventListener('click', () => {
-                const result = window.prompt('What is your name?');
+                const result = window.prompt("What is your name?");
                 if (result === null) {
-                    output.textContent = 'User didn’t enter anything';
+                    output.textContent = "Prompt result: User didn't enter anything";
                 } else {
                     const sanitizedResult = DOMPurify.sanitize(result);
-                    output.textContent = `Prompt result: ${sanitizedResult}!`;
+                    output.textContent = "Prompt result: ${sanitizedResult}!";
                 }
             });
 
