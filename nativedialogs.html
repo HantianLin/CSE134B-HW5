@@ -53,7 +53,7 @@
                 if (result === null) {
                     output.textContent = `Prompt result: User didn't enter anything`;
                 } else {
-                    let sanitizedResult = DOMPurify.sanitize(result.toString());
+                    let sanitizedResult = DOMPurify.sanitize(result);
                     output.textContent = `Prompt result: ${sanitizedResult}!`;
                 }
             });
