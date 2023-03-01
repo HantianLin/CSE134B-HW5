@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Native Dialogs</title>
+        <script type="text/javascript" src="src/purify.js"></script>
+    </head>
+
+    <body>
+        <h1>Native Dialogs</h1>
+        <button id="alert">
+            Alert
+        </button>
+        <button id="confirm">
+            Confirm
+        </button>
+        <button id="prompt">
+            Prompt
+        </button>
+        <button id="safer_prompt">
+            Safer Prompt
+        </button>
+        <br>
+        <output></output>
+
+        <script>
+            const alertBtn = document.getElementById('alert');
+            const confirmBtn = document.getElementById('confirm');
+            const promptBtn = document.getElementById('prompt');
+            const safePromptBtn = document.getElementById('safe_prompt');
+            const output = document.querySelector('output');
+
+            alertBtn.addEventListener('click', () => {
+                window.alert('Alert pressed');
+            });
+
+            confirmBtn.addEventListener('click', () => {
+                const result = window.confirm('Do you confirm this?');
+                output.textContent = `The value returned by the confirm method is: ${result}`;
+            });
+
+            promptBtn.addEventListener('click', () => {
+                const result = window.prompt('What is your name?');
+                if (result === null) {
+                    output.textContent = 'User didn’t enter anything';
+                } else {
+                    output.textContent = `Prompt result: ${result}`;
+                }
+            });
+
+            safePromptButton.addEventListener('click', () => {
+                const result = window.prompt('What is your name?');
+                result = window.prompt(DOMPurify.sanitize(result));
+                if (result === null) {
+                    output.textContent = 'User didn’t enter anything';
+                } else {
+                    const sanitizedResult = DOMPurify.sanitize(result);
+                    output.textContent = `Prompt result: ${sanitizedResult}!`;
+                }
+            });
+
+        </script>
+    </body>
+</html>
