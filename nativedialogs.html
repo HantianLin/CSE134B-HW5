@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="utf-8" />
         <title>Native Dialogs</title>
         <script type="text/javascript" src="src/purify.js"></script>
     </head>
@@ -35,25 +36,25 @@
 
             confirmBtn.addEventListener('click', () => {
                 const result = window.confirm('Do you confirm this?');
-                output.textContent = 'Confirm result: ${result}';
+                output.textContent = `Confirm result: ${result}`;
             });
 
             promptBtn.addEventListener('click', () => {
                 const result = window.prompt('What is your name?');
                 if (result === null) {
-                    output.textContent = 'Prompt result: User didn\'t enter anything';
+                    output.textContent = `Prompt result: User didn't enter anything`;
                 } else {
-                    output.textContent = 'Prompt result: ${result}';
+                    output.textContent = `Prompt result: ${result}`;
                 }
             });
 
             saferPromptBtn.addEventListener('click', () => {
                 const result = window.prompt('What is your name?');
                 if (result === null) {
-                    output.textContent = 'Prompt result: User didn\'t enter anything';
+                    output.textContent = `Prompt result: User didn't enter anything`;
                 } else {
                     const sanitizedResult = DOMPurify.sanitize(result);
-                    output.textContent = 'Prompt result: ${sanitizedResult}!';
+                    output.textContent = `Prompt result: ${sanitizedResult}!`;
                 }
             });
 
