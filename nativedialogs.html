@@ -26,7 +26,7 @@
             const alertBtn = document.getElementById('alert');
             const confirmBtn = document.getElementById('confirm');
             const promptBtn = document.getElementById('prompt');
-            const safePromptBtn = document.getElementById('safe_prompt');
+            const saferPromptBtn = document.getElementById('safer_prompt');
             const output = document.querySelector('output');
 
             alertBtn.addEventListener('click', () => {
@@ -47,7 +47,7 @@
                 }
             });
 
-            safePromptBtn.addEventListener('click', () => {
+            saferPromptBtn.addEventListener('click', () => {
                 const result = window.prompt('What is your name?');
                 if (result === null) {
                     output.textContent = 'User didn’t enter anything';
