@@ -61,10 +61,9 @@
             */
 
             saferPromptBtn.addEventListener('click', () => {
-                const html = `<p>What is your name?</p>`;
-                const result = window.prompt(DOMPurify.sanitize(html));
+                const result = window.prompt('What is your name?');
                 if (result === null) {
-                    output.textContent = `User didn't enter anything`;
+                    output.textContent = `Prompt result: User didn't enter anything`;
                 } else {
                     const sanitizedResult = DOMPurify.sanitize(result, {SAFE_FOR_TEMPLATES: true});
                     output.innerHTML = `<p>Hello, ${sanitizedResult}!</p>`;
