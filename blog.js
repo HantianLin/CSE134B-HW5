@@ -18,8 +18,8 @@ function displayPosts() {
         <p>Title: ${post.title}<p>
         <p>Date: ${post.date}</p>
         <p>Summary: ${post.summary}</p>
-        <button class="editButton" data-id="${post.id}">Edit</button>
-        <button class="deleteButton" data-id="${post.id}">Delete</button>
+        <button class="editButton"">Edit</button>
+        <button class="deleteButton"">Delete</button>
         <hr>
       `;
       postList.appendChild(postElement);
@@ -49,11 +49,11 @@ addPostButton.addEventListener("click", () => {
 });
 
 submitButton.addEventListener("click", () => {
-    const mode = submitButton.dataset.mode;
-    const id = submitButton.dataset.id;
     const title = postTitle.value;
     const date = postDate.value;
     const summary = postSummary.value;
+    const mode = submitButton.dataset.mode;
+    const id = submitButton.dataset.id;
 
     if (mode === "edit") {
         const index = posts.findIndex(post => post.id === parseInt(id));
