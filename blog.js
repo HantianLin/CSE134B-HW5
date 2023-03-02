@@ -20,6 +20,7 @@ function displayPosts() {
         <p>Summary: ${post.summary}</p>
         <button class="editButton" data-id="${post.id}">Edit</button>
         <button class="deleteButton" data-id="${post.id}">Delete</button>
+        <hr>
       `;
       postList.appendChild(postElement);
     });
@@ -28,12 +29,12 @@ function displayPosts() {
 function editPost(id) {
     const post = posts.find(post => post.id === id);
     if (post) {
-      postTitle.value = post.title;
-      postDate.value = post.date;
-      postSummary.value = post.summary;
-      submitButton.dataset.mode = 'edit';
-      submitButton.dataset.id = id;
-      postDialog.showModal();
+        postTitle.value = post.title;
+        postDate.value = post.date;
+        postSummary.value = post.summary;
+        submitButton.dataset.mode = 'edit';
+        submitButton.dataset.id = id;
+        postDialog.showModal();
     }
 }
 
@@ -48,18 +49,26 @@ addPostButton.addEventListener("click", () => {
 });
 
 submitButton.addEventListener("click", () => {
+    const mode = submitButton.dataset.mode;
     const id = submitButton.dataset.id;
     const title = postTitle.value;
     const date = postDate.value;
     const summary = postSummary.value;
 
-    const newPost = {
-        id: Date.now(),
-        title,
-        date,
-        summary
-    };
-    posts.push(newPost);
+    if(mode === "edit") {
+        const index = posts.findIndex(post => post.id === parseInt(id));
+        posts[index].title = title;
+        posts[index].date = date;
+        posts[index].summary = summary;
+    } else {
+        const newPost = {
+            id: Date.now(),
+            title,
+            date,
+            summary
+        };
+        posts.push(newPost);
+    }
 
     postDialog.close();
     displayPosts();
