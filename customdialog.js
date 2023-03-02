@@ -24,11 +24,11 @@ promptBtn.addEventListener('click', () => {
     promptDialog.showModal();
 });
 
-promptDialog.addEventListener('submit', () => {
+promptDialog.addEventListener('click', () => {
     if(promptDialog.returnValue == cancel) {
-        outputBox.value =  `Confirm result: User didn't enter anything`
+        outputBox.value =  `Prompt result: User didn't enter anything`
     } else {
         const name = nameInput.value;
-        outputBox.value = `Confirm result: ${name}`
+        outputBox.value = `Prompt result: ${name}`
     }
 });
