@@ -7,6 +7,7 @@ const postSummary = document.getElementById('postSummary');
 const submitButton = document.getElementById('submitButton');
 const cancelButton = document.getElementById('cancelButton');
 
+/*
 let posts = [
     {
       id: 1,
@@ -26,7 +27,15 @@ let posts = [
       date: '3/3/2023',
       summary: 'This is pre-populated for testing purposes.'
     }
-  ];
+];
+*/
+
+let posts = [];
+
+if (localStorage.getItem('posts')) {
+    posts = JSON.parse(localStorage.getItem('posts'));
+    displayPosts(posts);
+}
 
 function displayPosts() {
     const postList = document.getElementById('postList');
@@ -45,6 +54,7 @@ function displayPosts() {
     });
 }
 
+//to show the pre-populated blogs
 window.addEventListener("load", displayPosts);
 
 function editPost(id) {
@@ -61,6 +71,7 @@ function editPost(id) {
 
 function deletePost(id) {
     posts = posts.filter(post => post.id !== id);
+    localStorage.setItem('posts', JSON.stringify(posts));
     displayPosts();
 }
 
@@ -95,6 +106,7 @@ submitButton.addEventListener("click", () => {
     }
 
     postDialog.close();
+    localStorage.setItem('posts', JSON.stringify(posts));
     displayPosts();
 });
 
