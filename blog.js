@@ -7,7 +7,26 @@ const postSummary = document.getElementById('postSummary');
 const submitButton = document.getElementById('submitButton');
 const cancelButton = document.getElementById('cancelButton');
 
-let posts = [];
+let posts = [
+    {
+      id: 1,
+      title: 'Pre-populated blog 1',
+      date: '3/1/2023',
+      summary: 'This is pre-populated for testing purposes.'
+    },
+    {
+      id: 2,
+      title: 'Pre-populated blog 2',
+      date: '3/2/2023',
+      summary: 'This is pre-populated for testing purposes.'
+    },
+    {
+      id: 3,
+      title: 'Pre-populated blog 3',
+      date: '3/3/2023',
+      summary: 'This is pre-populated for testing purposes.'
+    }
+  ];
 
 function displayPosts() {
     const postList = document.getElementById('postList');
