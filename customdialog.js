@@ -1,5 +1,3 @@
-import DOMPurify from 'dompurify';
-
 const outputBox = document.querySelector('output');
 const alertBtn = document.getElementById('alertBtn');
 const alertDialog = document.getElementById('alertDialog');
@@ -18,7 +16,7 @@ confirmBtn.addEventListener('click', () => {
     confirmDialog.showModal();
 });
 confirmDialog.addEventListener('close', () => {
-    outputBox.value = `Confirm result: ${confirmDialog.returnValue}`
+    outputBox.value = `Confirm result: ${confirmDialog.returnValue}`;
 });
 
 promptBtn.addEventListener('click', () => {
@@ -26,10 +24,10 @@ promptBtn.addEventListener('click', () => {
 });
 promptDialog.addEventListener('close', () => {
     if(promptDialog.returnValue === 'cancel') {
-        outputBox.value =  `Prompt result: User didn't enter anything`
+        outputBox.value =  `Prompt result: User didn't enter anything`;
     } else {
         const name = nameInput.value;
-        const nameSanitized = DOMPurify.sanitize(name)
-        outputBox.value = `Prompt result: ${nameSanitized}`
+        const nameSanitized = DOMPurify.sanitize(name);
+        outputBox.value = `Prompt result: ${nameSanitized}`;
     }
 });
