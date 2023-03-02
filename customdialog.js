@@ -1,3 +1,5 @@
+import DOMPurify from 'dompurify';
+
 const outputBox = document.querySelector('output');
 const alertBtn = document.getElementById('alertBtn');
 const alertDialog = document.getElementById('alertDialog');
@@ -27,6 +29,7 @@ promptDialog.addEventListener('close', () => {
         outputBox.value =  `Prompt result: User didn't enter anything`
     } else {
         const name = nameInput.value;
-        outputBox.value = `Prompt result: ${name}`
+        const nameSanitized = DOMPurify.sanitize(name)
+        outputBox.value = `Prompt result: ${nameSanitized}`
     }
 });
