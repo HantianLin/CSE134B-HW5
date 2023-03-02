@@ -44,6 +44,9 @@ function deletePost(id) {
 }
 
 addPostButton.addEventListener("click", () => {
+    postTitle.value = "";
+    postDate.value = "";
+    postSummary.value = "";
     submitButton.dataset.mode = "add";
     postDialog.showModal();
 });
