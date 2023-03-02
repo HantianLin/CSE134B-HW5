@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Blogs</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-KnDmOmzLF1t8JtyPx0+PqEUMonGucWgR8L0tJohTtTz1omTQccy8S1OjOx4xKrD+oWJZo4a4G4fzoFk+I0C6/Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script 
+            src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.min.js"
+            integrity="sha512-TU4FJi5o+epsahLtM9OFRvH2gXmmlzGlysk9wtTFgbYbMvFzh3Cw1l3ubnYIvBiZCC/aurRHS408TeEbcuOoyQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+        <script type="module" src="blog.js"></script>
+    </head>
+
+    <body>
+        <h1>Blogs</h1>
+        <hr>
+        <div id="postList"></div>
+
+        <dialog id="postDialog">
+            <h3 id="dialogTitle">Create New Post</h3>
+            <form method="dialog">
+                <label for="postTitle">Title:</label>
+                <input type="text" id="postTitle">
+                <br>
+                <label for="postDate">Date:</label>
+                <input type="text" id="postDate">
+                <br>
+                <label for="postSummary">Summary:</label>
+                <input type="text" id="postSummary">
+                <br>
+                <button id="submitButton" value="submit">Submit</button>
+                <button id="cancelButton" value="cancel">Cancel</button>
+            </form>
+        </dialog>
+        
+        <button id="addPostButton">Add Post</button>
+
+    </body>
+
+</html>
