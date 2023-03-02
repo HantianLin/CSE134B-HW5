@@ -23,7 +23,7 @@ promptBtn.addEventListener('click', () => {
     promptDialog.showModal();
 });
 promptDialog.addEventListener('close', () => {
-    if(promptDialog.returnValue === cancel) {
+    if(promptDialog.returnValue === 'cancel') {
         outputBox.value =  `Prompt result: User didn't enter anything`
     } else {
         const name = nameInput.value;
