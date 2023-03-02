@@ -45,6 +45,8 @@ function displayPosts() {
     });
 }
 
+window.addEventListener("load", displayPosts);
+
 function editPost(id) {
     const post = posts.find(post => post.id === id);
     if (post) {
