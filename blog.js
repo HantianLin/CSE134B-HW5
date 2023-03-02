@@ -7,8 +7,7 @@ const postSummary = document.getElementById('postSummary');
 const submitButton = document.getElementById('submitButton');
 const cancelButton = document.getElementById('cancelButton');
 
-const mode = submitButton.dataset.mode;
-const id = submitButton.dataset.id;
+const modalMode = "add"
 
 let posts = [];
 
@@ -35,7 +34,7 @@ function editPost(id) {
         postTitle.value = post.title;
         postDate.value = post.date;
         postSummary.value = post.summary;
-        submitButton.dataset.mode = 'edit';
+        modalMode = "edit";
         submitButton.dataset.id = id;
         postDialog.showModal();
     }
@@ -46,22 +45,24 @@ function deletePost(id) {
     displayPosts();
 }
 
-
 addPostButton.addEventListener("click", () => {
+    modalMode = "add";
     postDialog.showModal();
 });
 
 submitButton.addEventListener("click", () => {
+    const mode = submitButton.dataset.mode;
+    const id = submitButton.dataset.id;
     const title = postTitle.value;
     const date = postDate.value;
     const summary = postSummary.value;
 
-    if(mode === "edit") {
+    if (modalMode === "edit") {
         const index = posts.findIndex(post => post.id === parseInt(id));
         posts[index].title = title;
         posts[index].date = date;
         posts[index].summary = summary;
-    } else {
+    } else if (modalMode === "add") {
         const newPost = {
             id: Date.now(),
             title,
