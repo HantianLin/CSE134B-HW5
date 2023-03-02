@@ -31,10 +31,9 @@ let posts = [
 */
 
 let posts = [];
-
 if (localStorage.getItem('posts')) {
     posts = JSON.parse(localStorage.getItem('posts'));
-    displayPosts(posts);
+    displayPosts();
 }
 
 function displayPosts() {
