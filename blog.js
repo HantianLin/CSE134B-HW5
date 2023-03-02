@@ -7,6 +7,9 @@ const postSummary = document.getElementById('postSummary');
 const submitButton = document.getElementById('submitButton');
 const cancelButton = document.getElementById('cancelButton');
 
+const mode = submitButton.dataset.mode;
+const id = submitButton.dataset.id;
+
 let posts = [];
 
 function displayPosts() {
@@ -49,8 +52,6 @@ addPostButton.addEventListener("click", () => {
 });
 
 submitButton.addEventListener("click", () => {
-    const mode = submitButton.dataset.mode;
-    const id = submitButton.dataset.id;
     const title = postTitle.value;
     const date = postDate.value;
     const summary = postSummary.value;
