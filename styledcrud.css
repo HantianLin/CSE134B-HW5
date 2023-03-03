@@ -74,11 +74,12 @@ h1 {
 }
 
 #postDialog {
+    display: flex;
+    justify-content: center;
     color: white;
     border: solid white 3px;
     width: 30%;
     height: 20%;
-    justify-content: center;
 }
 
 #dialogTitle {
