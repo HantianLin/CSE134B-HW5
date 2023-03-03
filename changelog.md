@@ -4,3 +4,5 @@ Each button outputs a different dialog.
 
 I also updated the vote button.
  When you click it, now you would make voting selection in a custom dialog. The website also outputs what you select.
+
+ I included Google Analytics in my website because I would like to track what is the highest voted animal.
