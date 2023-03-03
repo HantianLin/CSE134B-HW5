@@ -40,7 +40,16 @@
         <section class="Choices">
             <h2>--Click the categories and images--</h2>
             <div class="Canines">
-                <button class="btn" type="button" onclick="alert('Woof Woof!')"><b>Canines</b></button>
+                <dialog id="canineDialog">
+                    <form method="dialog">
+                        <p>
+                            Woof Woof! We are loyal.
+                        </p>
+                        <button value="default">Amazing</button>
+                    </form>
+                </dialog>
+                <button id="canineBtn">Canines</button>
+
                 <p>We have golden retriver, German shepherd, and corgi avaliable!</p>
                 <a class="animal_pic" href="golden-retriver.html"><img src="golden-retriver.jpeg" alt="golden-retriver" width="150" height="210"></a>
                 <a class="animal_pic" href="german-shepherd.html"><img src="german-shepherd.jpeg" alt="german-shepherd" width="250" height="140"></a>
@@ -50,14 +59,32 @@
             <hr>
 
             <div class="Felines">
-                <button class="btn" type="button" onclick="alert('Meow----!')"><b>Felines</b></button>
+                <dialog id="felineDialog">
+                    <form method="dialog">
+                        <p>
+                            Meow! We are fierce.
+                        </p>
+                        <button value="default">Amazing</button>
+                    </form>
+                </dialog>
+                <button id="felineBtn">Felines</button>
+
                 <p>We have orange cat, siamse cat, and tiger cub avaliable!</p>            
             </div>
 
             <hr>
 
             <div class="Otters">
-                <button class="btn" type="button" onclick="alert('Chirp!!!')"><b>Otters</b></button>
+                <dialog id="otterDialog">
+                    <form method="dialog">
+                        <p>
+                            Chirp! We are cute.
+                        </p>
+                        <button value="default">Amazing</button>
+                    </form>
+                </dialog>
+                <button id="otterBtn">Otters</button>
+
                 <p>we have otter and sea otter avaliable!</p>            
             </div>
         </section>
