@@ -14,12 +14,12 @@ h1 {
 #postList {
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 
 .post {
     background-color: rgba(128, 128, 128, 0.254);
-    padding: 15px;
-    border: solid rgba(118, 118, 118, 0.326) 1px;
+    border: solid white 1px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -57,9 +57,18 @@ h1 {
 }
 
 .editButton {
+    margin-left: auto;
+    margin-right: auto;
     color: white;
 }
 
 .deleteButton {
+    margin-left: auto;
+    margin-right: auto;
     color: white;
+}
+
+#addPostButton {
+    margin-left: auto;
+    margin-right: auto;
 }
