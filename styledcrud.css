@@ -74,7 +74,9 @@ h1 {
 
 #postDialog {
     color: white;
-    border: solid white 3px;;
+    border: solid white 3px;
+    width: 30%;
+    height: 30%;
 }
 
 #postTitle {
