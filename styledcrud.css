@@ -78,21 +78,21 @@ h1 {
     width: 30%;
     height: 30%;
     justify-content: center;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 }
 
 #postTitle {
     color: white;
+    margin-bottom: 5px;
 }
 
 #postDate {
     color: white;
+    margin-bottom: 5px;
 }
 
 #postSummary {
     color: white;
+    margin-bottom: 5px;
 }
 
 #submitButton {
