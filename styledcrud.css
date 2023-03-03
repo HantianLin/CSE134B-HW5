@@ -82,17 +82,20 @@ h1 {
 
 #postTitle {
     color: white;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    width: 80%
 }
 
 #postDate {
     color: white;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    width: 80%
 }
 
 #postSummary {
     color: white;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    width: 80%
 }
 
 #submitButton {
