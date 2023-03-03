@@ -86,23 +86,32 @@ h1 {
 
 #postTitle {
     color: white;
+    margin-bottom: 15px;
     width: 80%
 }
 
 #postDate {
     color: white;
+    margin-bottom: 15px;
     width: 80%
 }
 
 #postSummary {
     color: white;
+    margin-bottom: 15px;
     width: 70%
 }
 
 #submitButton {
     color: white;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 #cancelButton {
     color: white;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
 }
