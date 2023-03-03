@@ -140,7 +140,7 @@ aside h3 {
     100% {background-color: var(--blue);}
 }
 
-.vote {
+#voteBtn {
     animation-name: voting;
     animation-duration: 2s;
     animation-iteration-count: infinite;

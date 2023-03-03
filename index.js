@@ -16,3 +16,4 @@ felineBtn.addEventListener('click', () => {
 otterBtn.addEventListener('click', () => {
     otterDialog.showModal();
 });
+

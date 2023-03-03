@@ -1,0 +1,1 @@
+I changed the button for canine, feline, and otter. When you click them, now they would show a custom dialog instead of a window alert.
