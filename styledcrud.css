@@ -82,8 +82,7 @@ h1 {
 }
 
 #dialogTitle {
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
 }
 
 #postTitle {
