@@ -76,3 +76,23 @@ h1 {
     color: white;
     border: solid white 3px;;
 }
+
+#postTitle {
+    color: white;
+}
+
+#postDate {
+    color: white;
+}
+
+#postSummary {
+    color: white;
+}
+
+#submitButton {
+    color: white;
+}
+
+#cancelButton {
+    color: white;
+}
