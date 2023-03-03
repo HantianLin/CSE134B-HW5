@@ -6,10 +6,9 @@
     margin-right: auto;
 }
 
-#body {
+#postList {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 5px;
 }
 
@@ -75,4 +74,6 @@ h1 {
 #addPostButton {
     color: white;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
