@@ -1,0 +1,65 @@
+* {
+    background-color: black;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 2em;
+    color: antiquewhite;
+}
+
+#postList {
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    background-color: rgba(128, 128, 128, 0.254);
+    padding: 15px;
+    border: solid rgba(118, 118, 118, 0.326) 1px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#title {
+    color: white;
+    font-family: "Fira Sans", sans-serif;
+    word-break: break-word;
+    font-weight: 800;
+    font-size: 18px !important;
+    font-stretch: extra-expanded;
+    padding-top: 5px;
+}
+
+#date {
+    color: gray;
+    font-family: "Fira Sans", sans-serif;
+    word-break: break-word;
+    font-weight: 300;
+    font-size: 18px !important;
+    font-stretch: extra-expanded;
+    padding-top: 5px;
+}
+
+#summary {
+    color: gray;
+    font-family: "Fira Sans", sans-serif;
+    word-break: break-word;
+    font-weight: 300;
+    font-size: 18px !important;
+    font-stretch: extra-expanded;
+    padding-top: 5px;
+}
+
+.editButton {
+    color: white;
+}
+
+.deleteButton {
+    color: white;
+}

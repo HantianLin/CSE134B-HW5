@@ -41,10 +41,11 @@ function displayPosts() {
     postList.innerHTML = '';
     posts.forEach(post => {
       const postElement = document.createElement('div');
+      postElement.class = 'post'
       postElement.innerHTML = `
-        <p>Title: ${post.title}<p>
-        <p>Date: ${post.date}</p>
-        <p>Summary: ${post.summary}</p>
+        <p id="title">Title: ${post.title}<p>
+        <p id="date">Date: ${post.date}</p>
+        <p id="summary">Summary: ${post.summary}</p>
         <button class="editButton" data-id="${post.id}"><i class="fas fa-pencil"></i></button>
         <button class="deleteButton" data-id="${post.id}"><i class="fas fa-trash"></i></button>
         <hr>
