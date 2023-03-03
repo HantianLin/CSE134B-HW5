@@ -105,8 +105,10 @@ h1 {
 
 #submitButton {
     color: white;
+    text-align: center;
 }
 
 #cancelButton {
     color: white;
+    text-align: center;
 }
