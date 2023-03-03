@@ -33,7 +33,8 @@ h1 {
     font-weight: 800;
     font-size: 18px !important;
     font-stretch: extra-expanded;
-    padding-top: 5px;
+    padding-top: 2px;
+    margin-left: 10px;
 }
 
 #date {
@@ -43,7 +44,8 @@ h1 {
     font-weight: 300;
     font-size: 18px !important;
     font-stretch: extra-expanded;
-    padding-top: 5px;
+    padding-top: 2px;
+    margin-left: 10px;
 }
 
 #summary {
@@ -53,7 +55,8 @@ h1 {
     font-weight: 300;
     font-size: 18px !important;
     font-stretch: extra-expanded;
-    padding-top: 5px;
+    padding-top: 2px;
+    margin-left: 10px;
 }
 
 .editButton {
