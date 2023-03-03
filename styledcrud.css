@@ -68,7 +68,7 @@ h1 {
 
 #addPostButton {
     color: white;
-    text-align: center;
+    margin: auto;
     font-size: 2em;
 }
 
@@ -100,7 +100,7 @@ h1 {
 #postSummary {
     color: white;
     margin-bottom: 10px;
-    width: 60%
+    width: 70%
 }
 
 #submitButton {
