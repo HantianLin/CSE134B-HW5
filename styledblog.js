@@ -48,7 +48,6 @@ function displayPosts() {
         <p id="summary">Summary: ${post.summary}</p>
         <button class="editButton" data-id="${post.id}"><i class="fas fa-pencil"></i></button>
         <button class="deleteButton" data-id="${post.id}"><i class="fas fa-trash"></i></button>
-        <hr>
       `;
       postList.appendChild(postElement);
     });
