@@ -41,7 +41,7 @@ function displayPosts() {
     postList.innerHTML = '';
     posts.forEach(post => {
       const postElement = document.createElement('div');
-      postElement.class = 'post'
+      postElement.className = 'post'
       postElement.innerHTML = `
         <p id="title">Title: ${post.title}<p>
         <p id="date">Date: ${post.date}</p>
