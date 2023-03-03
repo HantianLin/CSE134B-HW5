@@ -34,9 +34,9 @@ animals.addEventListener('change', (event) => {
 submitBtn.addEventListener('click', () => {
     favAnimal.returnValue = animals.value;
     favAnimal.close();
+    voteResult.value = `You voted for: ${favAnimal.returnValue}`;
 });
 
 cancelBtn.addEventListener('click', () => {
     favAnimal.close();
-    voteResult.value = `You voted for: ${favAnimal.returnValue}`;
 });
