@@ -80,6 +80,11 @@ h1 {
     justify-content: center;
 }
 
+#dialogTitle {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #postTitle {
     color: white;
     margin-bottom: 10px;
@@ -95,7 +100,7 @@ h1 {
 #postSummary {
     color: white;
     margin-bottom: 10px;
-    width: 80%
+    width: 60%
 }
 
 #submitButton {
