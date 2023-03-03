@@ -73,13 +73,9 @@ h1 {
     display: block;
 }
 
-#postDialog form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+#postDialog {
     color: white;
     border: solid white 3px;
-    gap: 15px;
     width: 30%;
     height: 30%;
 }
