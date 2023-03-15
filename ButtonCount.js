@@ -4,8 +4,8 @@ class ButtonCount extends HTMLElement {
       
       this.attachShadow({ mode: 'open' });
   
-      const button = document.createElement('button');
-      button.addEventListener('click', () => {
+      this.button = document.createElement('button');
+      this.button.addEventListener('click', () => {
         this.count++;
         this.render();
       });
