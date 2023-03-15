@@ -69,6 +69,12 @@
         .then(json => document.getElementById("response").innerHTML = JSON.stringify(json, null, 2))
         .catch(err => console.log(err));
     }
+
+    function getDate() {
+        const dateOutput = document.getElementById("date");
+        const currentDate = new Date();
+        dateOutput.textContent = currentDate.toLocaleString();
+    }
     </script>
     <style>
         #response {
@@ -84,11 +90,15 @@
         <label for="article_name">Article Name:</label>
         <input type="text" id="article_name" name="article_name"><br><br>
         <label for="article_body">Article Body:</label><br>
-        <textarea id="article_body" name="article_body" rows="4" cols="50"></textarea><br><br>
+        <textarea id="article_body" name="article_body" rows="4" cols="50"></textarea>
+        <label for="date">Date:</label>
+        <output id="date"></output><br>
+        <br><br>
         <button type="button" id="postBtn" onclick="postData()">Post Data</button>
         <button type="button" id="getBtn" onclick="getData()">Get Data</button>
         <button type="button" id="putBtn" onclick="putData()">Put Data</button>
         <button type="button" id="deleteBtn" onclick="deleteData()">Delete Data</button>
+        <button type="button" id="dateBtn" onclick="getDate()">Date</button>
     </form>
     <br>
     <label>Response:</label>
