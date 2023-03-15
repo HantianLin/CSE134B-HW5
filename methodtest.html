@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method Test</title>
+    <script>
+    function postData() {
+        const id = document.getElementById("id").value;
+        const articleName = document.getElementById("article_name").value;
+        const articleBody = document.getElementById("article_body").value;
+        const date = new Date().toLocaleString();
+        const data = {
+            id: id,
+            article_name: articleName,
+            article_body: articleBody,
+            date: date
+        };
+
+        fetch("https://httpbin.org/post", {
+            method: "POST",
+            body: JSON.stringify(data),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8"
+            }
+        })
+        .then(response => response.json())
+        .then(json => document.getElementById("response").innerHTML = JSON.stringify(json, null, 2))
+        .catch(err => console.log(err));
+    }
+
+    function getData() {
+        fetch("https://httpbin.org/get")
+        .then(response => response.json())
+        .then(json => document.getElementById("response").innerHTML = JSON.stringify(json, null, 2))
+        .catch(err => console.log(err));
+    }
+
+    function putData() {
+        const id = document.getElementById("id").value;
+        const articleName = document.getElementById("article_name").value;
+        const articleBody = document.getElementById("article_body").value;
+        const date = new Date().toLocaleString();
+
+        const data = {
+            id: id,
+            article_name: articleName,
+            article_body: articleBody,
+            date: date
+        };
+
+        fetch("https://httpbin.org/put", {
+            method: "PUT",
+            body: JSON.stringify(data),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8"
+            }
+        })
+        .then(response => response.json())
+        .then(json => document.getElementById("response").innerHTML = JSON.stringify(json, null, 2))
+        .catch(err => console.log(err));
+    }
+
+    function deleteData() {
+        fetch("https://httpbin.org/delete", {
+            method: "DELETE"
+        })
+        .then(response => response.json())
+        .then(json => document.getElementById("response").innerHTML = JSON.stringify(json, null, 2))
+        .catch(err => console.log(err));
+    }
+    </script>
+    <style>
+        #response {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="id">ID:</label>
+        <input type="number" id="id" name="id"><br><br>
+        <label for="article_name">Article Name:</label>
+        <input type="text" id="article_name" name="article_name"><br><br>
+        <label for="article_body">Article Body:</label><br>
+        <textarea id="article_body" name="article_body" rows="4" cols="50"></textarea><br><br>
+        <button type="button" id="postBtn" onclick="postData()">Post Data</button>
+        <button type="button" id="getBtn" onclick="getData()">Get Data</button>
+        <button type="button" id="putBtn" onclick="putData()">Put Data</button>
+        <button type="button" id="deleteBtn" onclick="deleteData()">Delete Data</button>
+    </form>
+    <br>
+    <label>Response:</label>
+    <output id="response"></output>
+</body>
+
+</html>
